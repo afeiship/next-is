@@ -73,7 +73,7 @@
   };
 
   nx.isObject = function (inObj) {
-    return nx.type(inObj) == 'object';
+    return !nx.isArray(inObj) && inObj === Object(inObj);
   };
 
   nx.isDocument = function (inObj) {
