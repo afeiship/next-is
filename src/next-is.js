@@ -3,6 +3,15 @@
   var global = global || this || self || window;
   var nx = global.nx || require('next-js-core2');
 
+  // @thanks to:
+  // https://github.com/jashkenas/underscore/blob/master/underscore.js#L1319
+  // // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp, isError, isMap, isWeakMap, isSet, isWeakSet.
+  // _.each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp', 'Error', 'Symbol', 'Map', 'WeakMap', 'Set', 'WeakSet'], function(name) {
+  //   _['is' + name] = function(obj) {
+  //     return toString.call(obj) === '[object ' + name + ']';
+  //   };
+  // });
+
   nx.is = function (inTarget, inType) {
     if (inTarget && inTarget.is) {
       return inTarget.is(inType);
