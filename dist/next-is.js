@@ -64,6 +64,10 @@
     return typeof(inObj) == 'boolean';
   };
 
+  nx.isDate = function(inObj){
+    return inObj instanceof Date;
+  };
+
   nx.isString = function (inObj) {
     return typeof(inObj) == 'string';
   };
