@@ -19,10 +19,12 @@ test('test object is: PrimitiveValue', () => {
   var rs3 = nxIs(1, 1);
   var rs4 = nxIs('1', 1);
   var rs5 = nxIs('', false);
+  var rs6 = nxIs(null, undefined);
 
   expect(rs1).toBe(true);
   expect(rs2).toBe(true);
   expect(rs3).toBe(true);
   expect(rs4).toBe(false);
   expect(rs5).toBe(false);
+  expect(rs6).toBe(false);
 });
