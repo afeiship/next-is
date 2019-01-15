@@ -2,11 +2,11 @@
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
 
-  nx.is = function(inTarget1, inTarget2) {
-    if (inTarget1 === inTarget2) {
-      return inTarget1 !== 0 || inTarget2 !== 0 || 1 / inTarget1 === 1 / inTarget2;
+  nx.is = function(inX, inY) {
+    if (inX === inY) {
+      return inX !== 0 || inY !== 0 || 1 / inX === 1 / inY;
     } else {
-      return inTarget1 !== inTarget1 && inTarget2 !== inTarget2;
+      return inX !== inX && inY !== inY;
     }
   };
 
