@@ -8,3 +8,10 @@ test('test object is: +0/-0 ___ 0', () => {
   expect(rs1).toBe(true);
   expect(rs2).toBe(false);
 });
+
+
+
+test('test object is:NaN', () => {
+  var rs1 = nxIs(NaN, NaN);
+  expect(rs1).toBe(true);
+});
