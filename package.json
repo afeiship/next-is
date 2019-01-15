@@ -8,7 +8,8 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "test": "jest"
   },
   "main": "dist/next-is.js",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-size": "^2.1.0",
     "gulp-uglify": "^2.1.2",
+    "jest": "^23.6.0",
     "yargs": "^4.7.1"
   }
 }
