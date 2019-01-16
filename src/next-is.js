@@ -6,11 +6,8 @@
     if (inX === inY) {
       return inX !== 0 || inY !== 0 || 1 / inX === 1 / inY;
     } else {
-      // NaN!==NaN OR: inX!==inX
-      if (isNaN(inX) && isNaN(inY)) {
-        return true;
-      }
-      return false;
+      // NaN!==NaN SO: inX!==inX
+      return inX !== inX && inY !== inY;
     }
   };
 
